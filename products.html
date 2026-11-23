@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>North Star Bakery | Our Products</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="bakery-logo.png" alt="North Star Bakery logo featuring a gold star above the bakery name" width="200">
+    <p>Warm, handmade, and community centered.</p>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Our Products</a></li>
+      <li><a href="about.html">About Our Bakery</a></li>
+      <li><a href="contact.html">Contact and Pre-Orders</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Our Products</h1>
+    <p>Everything at North Star Bakery is baked in small batches throughout the day. The price ranges below will help you plan your visit or event. There is no online checkout on this site — just send us a pre-order request on our <a href="contact.html">Contact and Pre-Orders</a> page and we will have your items ready for pickup.</p>
+
+    <section aria-labelledby="favorites-heading">
+      <h2 id="favorites-heading">Your Favorites</h2>
+      <p id="favorites-count">You have not saved any favorites yet.</p>
+      <ul id="favorites-list"></ul>
+      <p><button type="button" id="clear-favorites">Clear favorites</button></p>
+      <p>When you are ready, <a href="contact.html">send a pre-order request</a> and mention your favorites.</p>
+    </section>
+
+    <h2>Breads</h2>
+    <img src="bakery-bread.jpg" alt="Freshly baked artisan bread loaves with crisp, golden crusts cooling on a bakery rack" width="600">
+    <p>Our bread case changes with the seasons, but you can always count on hearty everyday loaves and weekend specials.</p>
+    <ul>
+      <li><strong>Country Sourdough:</strong> Tangy, chewy, and naturally leavened. $6 to $9 per loaf. <button type="button" class="favorite-button" data-product="country-sourdough" aria-pressed="false">Add to Favorites</button></li>
+      <li><strong>Honey Oat Loaf:</strong> Soft sandwich bread sweetened with local honey. $5 to $8 per loaf. <button type="button" class="favorite-button" data-product="honey-oat-loaf" aria-pressed="false">Add to Favorites</button></li>
+      <li><strong>Multigrain and Seeded Loaves:</strong> Hearty loaves packed with whole grains. $6 to $9 per loaf. <button type="button" class="favorite-button" data-product="multigrain-seeded" aria-pressed="false">Add to Favorites</button></li>
+      <li><strong>Baguettes and Rolls:</strong> Crisp baguettes and soft dinner rolls. $3 to $6 each or per half dozen. <button type="button" class="favorite-button" data-product="baguettes-rolls" aria-pressed="false">Add to Favorites</button></li>
+    </ul>
+
+    <figure>
+      <img src="bakery-signature-loaf.jpg" alt="North Star Bakery's signature sourdough loaf with a deeply scored, caramelized crust on a wooden board" width="600">
+      <figcaption>Our Signature Loaf — the North Star Country Sourdough, naturally leavened and baked fresh every morning.</figcaption>
+    </figure>
+
+    <h2>Pastries</h2>
+    <p>Perfect for commuters, morning meetings, and slow weekend breakfasts with family.</p>
+    <ul>
+      <li><strong>Croissants:</strong> Plain, chocolate, and almond. $3.50 to $5.50 each. <button type="button" class="favorite-button" data-product="croissants" aria-pressed="false">Add to Favorites</button></li>
+      <li><strong>Muffins and Scones:</strong> Rotating flavors such as blueberry, lemon, and cinnamon. $3 to $5 each. <button type="button" class="favorite-button" data-product="muffins-scones" aria-pressed="false">Add to Favorites</button></li>
+      <li><strong>Cinnamon Rolls and Danish:</strong> Warm, spiced, and glazed to order. $4 to $6 each. <button type="button" class="favorite-button" data-product="cinnamon-rolls-danish" aria-pressed="false">Add to Favorites</button></li>
+      <li><strong>Pastry Boxes:</strong> Assorted boxes for offices and gatherings. $18 to $36 per box. <button type="button" class="favorite-button" data-product="pastry-boxes" aria-pressed="false">Add to Favorites</button></li>
+    </ul>
+
+    <h2>Cakes and Special Orders</h2>
+    <p>From birthdays to weddings, our bakers work with families and event planners to create cakes worth celebrating with.</p>
+    <ul>
+      <li><strong>Everyday Cakes:</strong> Ready-to-go layer cakes for small gatherings. $24 to $40 each. <button type="button" class="favorite-button" data-product="everyday-cakes" aria-pressed="false">Add to Favorites</button></li>
+      <li><strong>Custom Celebration Cakes:</strong> Made to order in your choice of flavors and fillings. $45 to $120 and up, depending on size and design. <button type="button" class="favorite-button" data-product="custom-celebration-cakes" aria-pressed="false">Add to Favorites</button></li>
+      <li><strong>Cupcakes:</strong> Sold by the half dozen or dozen for parties and events. $15 to $30 per dozen. <button type="button" class="favorite-button" data-product="cupcakes" aria-pressed="false">Add to Favorites</button></li>
+    </ul>
+    <p>Please give us at least 48 hours of notice for custom cakes. Use our <a href="contact.html">Contact and Pre-Orders</a> form to tell us what you need, including any allergy notes, and we will confirm your order.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 North Star Bakery. Baked fresh daily in your neighborhood.</p>
+    <p><a href="contact.html">Contact us to place a pre-order</a></p>
+    <p id="favorites-summary"></p>
+  </footer>
+</body>
+</html>
